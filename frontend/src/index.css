@@ -1,0 +1,45 @@
+html, body {
+  margin: 0px;
+  height: 100%;
+  text-align: center;
+  background:
+    lightgrey
+    url("./images/background-medium.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+
+#root {
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main-column {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.main-nav {
+  background-color: #111;
+}

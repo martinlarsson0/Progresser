@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+}
+
+.navItem {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.active {
+    background-color: green;
+}
