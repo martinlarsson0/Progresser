@@ -1,11 +1,24 @@
-import React from 'react'
-import './header.css'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import css from "./header.module.css";
 
-const Header = () => 
-    <div className="header">
-        <h1> </h1>
-        <h1>Progresser</h1>
-        <h3>Log in   Sign up</h3>
-    </div>
+const Header = () => (
+  <div className={css.header}>
+    <h1> </h1>
+    <h1>
+      <NavLink className={`${css.logo} ${css.navItem}`} exact to="/">
+        Progresser
+      </NavLink>
+    </h1>
+    <h3>
+      <NavLink className={css.navItem} exact to="/login">
+        Log in
+      </NavLink>
+      <NavLink className={css.navItem} exact to="/register">
+        Register
+      </NavLink>
+    </h3>
+  </div>
+);
 
-export default Header
+export default Header;

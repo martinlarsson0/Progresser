@@ -1,9 +1,0 @@
-.header {
-    display: flex;
-    flex-direction: row;
-    background-color: #111;
-    color: #FFF;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 5px solid green;
-}

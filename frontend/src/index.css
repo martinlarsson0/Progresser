@@ -1,14 +1,18 @@
-html, body {
+html,
+body {
   margin: 0px;
   height: 100%;
   text-align: center;
-  background:
-    lightgrey
-    url("./images/background-medium.jpg") no-repeat center center fixed;
+  background: lightgrey url("./images/background-medium.jpg") no-repeat center
+    center fixed;
   background-size: cover;
 }
 
-h1, h2, p, ul, li {
+h1,
+h2,
+p,
+ul,
+li {
   font-family: sans-serif;
 }
 
@@ -38,8 +42,4 @@ h1, h2, p, ul, li {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-}
-
-.main-nav {
-  background-color: #111;
 }

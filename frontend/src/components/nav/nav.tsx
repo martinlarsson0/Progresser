@@ -1,14 +1,30 @@
-import React from 'react'
-import {
-    NavLink,
-  } from "react-router-dom";
-import './nav.css'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import css from "./nav.module.css";
 
-const Nav = () => 
-    <div className="nav">
-        <NavLink className="navItem" exact to="/">Home</NavLink>
-        <NavLink className="navItem" to="/stuff">Stuff</NavLink>
-        <NavLink className="navItem" to="/contact">Contact</NavLink>
-    </div>
+const Nav = () => (
+  <div className={css.nav}>
+    <NavLink className={css.navItem} activeClassName={css.active} exact to="/">
+      Home
+    </NavLink>
+    <NavLink
+      className={css.navItem}
+      activeClassName={css.active}
+      to="/exercise"
+    >
+      Exercise
+    </NavLink>
+    <NavLink className={css.navItem} activeClassName={css.active} to="/history">
+      History
+    </NavLink>
+    <NavLink
+      className={css.navItem}
+      activeClassName={css.active}
+      to="/settings"
+    >
+      Settings
+    </NavLink>
+  </div>
+);
 
-export default Nav
+export default Nav;
